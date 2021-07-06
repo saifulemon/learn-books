@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --single-font: 'Sniglet', cursive;
+    --Rubik: 'Rubik', cursive;
+    --Patua: 'Patua One', cursive;
+    --Lobster: 'Lobstar', cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --lightgray: #ffffffe6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+/* this style for header section */
+header {
+    font-family: var(--Lobster);
+    background: var(--bggradient);
+}
+
+header a {
+    font-family: var(--single-font);
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px #00000033;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-brand {
+    padding-left: 128px;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-item:last-child {
+    padding-right: 168px;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.header-img {
+    padding: 4.2vmin 1vmin;
+}
+
+.header-img img {
+    width: 90%;
+}
+
+.header-text {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+}
+
+.header-text h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+.header-text h1 {
+    font-size: 6.5vmin;
+    font-weight: bold;
+    padding: 1.6px 0px;
+}
+
+.header-text p {
+    padding: 1vmin 5vmin;
+}
+
+/* this style for section-1 */
+.sec-1 {
+    padding: 20vmin 0;
+}
+
+.pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.pray-content {
+    position: relative;
+}
+
+.panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px #00000033;
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.panel h1 {
+    font-weight: bold;
+    padding: 0 64px 0;
+    font-size: 32px;
+}
+
+.panel p {
+    font-size: 14.4px;
+    color: #cac7c7;
+}
+
+/* this style for section-2 */
+.cover {
+    width: 100%;
+    height: 65vmin;
+    background: url('../photos/main-img/pexels-photo-452738.jpeg');
+    background-position: -384px -304px;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .content {
+    background: #000000b3;
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content>p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px #ff000059;
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: tomato;
+}
+
+.numbers .rect p {
+    font-family: var(--Patua);
+}
+
+.purchase h1 {
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase p {
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin 3vmin;
+}
+
+.cards div {
+    padding: 0;
+    margin: 0;
+}
+
+.cards .title {
+    background: #d0f1f133;
+    padding: 1.4em 2.5em;
+    font-size: 2vmin;
+}
+
+.card .card-text {
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing {
+    background: #d0f1f133;
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing h1 {
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+}
+
+/* this style for section-3 */
+.sec-3 {
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.download-content h1 {
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+
+.download-content p {
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--lightgray);
+    font-size: 3vmin;
+}
+
+.download {
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.download h3 {
+    font-size: 4vmin;
+}
+
+.download p {
+    font-size: 2vmin;
+}
+
+/* this style for section-4 */
+
+.team-content h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+.team {
+    padding: 10vmin 4vmin;
+}
+
+.card {
+    width: 90%;
+    margin-top: 10vmin;
+}
+
+.card-single {
+    width: 25rem;
+}
+
+.card-text {
+    padding: 0.5em;
+}
+
+.card-body a {
+    font-size: 1.5em;
+}
+
+.border-radious {
+    border-radius: 340px;
+    width: 60%;
+}
+
+/* this style for footer section  */
+footer {
+    background: #000000d0;
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p span {
+    color: #ff512f;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+footer .column i+i {
+    padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000d0;
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
